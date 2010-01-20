@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/svn/!svn/ver/10/trunk
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/2/trunk/.project
+END
+.as3_classpath
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2/trunk/.as3_classpath
+END

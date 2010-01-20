@@ -1,0 +1,4 @@
+package {	import flash.display.Sprite;		import com.gamemeal.html.Canvas;	/**
+	 * @author Colin
+	 */
+	public class TestSample4 {		public function TestSample4(root:Sprite):void{			var canvas:Canvas = new Canvas("myCanvas",160,160);			var ctx:Canvas = canvas.getContext("2d");			ctx.beginPath();			ctx.arc(75,75,50,0,Math.PI*2,true); // Outer circle			ctx.moveTo(110,75);			ctx.arc(75,75,35,0,Math.PI,false);   // Mouth (clockwise)			ctx.moveTo(65,65);			ctx.arc(60,65,5,0,Math.PI*2,true);  // Left eye			ctx.moveTo(95,65);			ctx.arc(90,65,5,0,Math.PI*2,true);  // Right eye			ctx.stroke();						root.addChild(ctx);		}	}}

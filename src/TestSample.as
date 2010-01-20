@@ -1,0 +1,4 @@
+package {	import flash.display.Sprite;		import com.gamemeal.html.Canvas;	/**
+	 * @author Colin
+	 */
+	public class TestSample {		public function TestSample(root:Sprite):void{			var canvas:Canvas = new Canvas("myCanvas",160,160);			var ctx:Canvas = canvas.getContext("2d");			ctx.fillStyle = "red";						ctx.beginPath();			ctx.moveTo(30, 30);			ctx.lineTo(150, 150);			// was: ctx.quadraticCurveTo(60, 70, 70, 150); which is wrong.			ctx.bezierCurveTo(60, 70, 60, 70, 70, 150); // <- this is right formula for the image on the right ->			ctx.lineTo(30, 30);			ctx.fill();						root.addChild(ctx);		}	}}
