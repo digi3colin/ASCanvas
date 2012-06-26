@@ -1,4 +1,4 @@
-﻿package com.gamemeal.html.utils {
+﻿package com.gamemeal.html.canvas {
 	/**
 	 * @author Digi3Studio - Colin Leung
 	 */
